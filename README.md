@@ -61,7 +61,7 @@ npm install npm@latest -g
 
 1. Clone the repo
 ```sh
-git clone git@github.com:sanadwj/claculator.git
+git clone git@github.com:diazgio/react-calc.git
 ```
 2. Install NPM packages
 ```sh
