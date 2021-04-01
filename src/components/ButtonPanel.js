@@ -3,33 +3,33 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 export default function ButtonPanel({
-  group1, group2, group3, group4, group5,
+  group1, group2, group3, group4, group5, clickHandler,
 }) {
   return (
     <div>
       <div>
         {group1.map(item => (
-          <Button name={item} key={item} />
+          <Button name={item} key={item} onClick={clickHandler} />
         ))}
       </div>
       <div>
         {group2.map(item => (
-          <Button name={item} key={item} />
+          <Button name={item} key={item} onClick={clickHandler} />
         ))}
       </div>
       <div>
         {group3.map(item => (
-          <Button name={item} key={item} />
+          <Button name={item} key={item} onClick={clickHandler} />
         ))}
       </div>
       <div>
         {group4.map(item => (
-          <Button name={item} key={item} />
+          <Button name={item} key={item} onClick={clickHandler} />
         ))}
       </div>
       <div>
         {group5.map(item => (
-          <Button name={item} key={item} />
+          <Button name={item} key={item} onClick={clickHandler} />
         ))}
       </div>
     </div>
@@ -42,6 +42,7 @@ ButtonPanel.propTypes = {
   group3: PropTypes.arrayOf(PropTypes.string),
   group4: PropTypes.arrayOf(PropTypes.string),
   group5: PropTypes.arrayOf(PropTypes.string),
+  clickHandler: PropTypes.func.isRequired,
 };
 
 ButtonPanel.defaultProps = {
