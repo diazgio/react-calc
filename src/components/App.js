@@ -12,8 +12,8 @@ export default function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/quote" component={Quote} />
-          <Route path="/calculator" component={Calculator} />
+          <Route path="/quote" component={Quote} exact />
+          <Route path="/calculator" component={Calculator} exact />
         </Switch>
       </BrowserRouter>
     </>
