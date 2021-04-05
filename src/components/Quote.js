@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function Quote() {
-  return (
-    <div>
-      <h1>
-        Mathematics is not about numbers, equations, computations,
-        or algorithms: it is about understanding. –William Paul ThurstonHomeCalculatorQuote
-      </h1>
-    </div>
-  );
-}
+const Quote = () => (
+  <div>
+    <h2 className="quote">
+      Mathematics is not about numbers, equations, computations, or algorithms:
+    </h2>
+    <h2>it is about understanding. –William Paul Thurston</h2>
+  </div>
+);
+
+export default Quote;

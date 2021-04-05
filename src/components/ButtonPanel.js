@@ -6,28 +6,28 @@ export default function ButtonPanel({
   group1, group2, group3, group4, group5, clickHandler,
 }) {
   return (
-    <div>
-      <div>
+    <div className="buttonPanel">
+      <div className="buttonDiv">
         {group1.map(item => (
           <Button name={item} key={item} onClick={clickHandler} />
         ))}
       </div>
-      <div>
+      <div className="buttonDiv">
         {group2.map(item => (
           <Button name={item} key={item} onClick={clickHandler} />
         ))}
       </div>
-      <div>
+      <div className="buttonDiv">
         {group3.map(item => (
           <Button name={item} key={item} onClick={clickHandler} />
         ))}
       </div>
-      <div>
+      <div className="buttonDiv">
         {group4.map(item => (
           <Button name={item} key={item} onClick={clickHandler} />
         ))}
       </div>
-      <div>
+      <div className="buttonDiv">
         {group5.map(item => (
           <Button name={item} key={item} onClick={clickHandler} />
         ))}

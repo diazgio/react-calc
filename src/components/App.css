@@ -1,0 +1,77 @@
+body {
+  margin: 0 auto;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  padding: 30px;
+}
+
+.display {
+  display: flex;
+  max-width: 700px;
+  background-color: gray;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+
+.buttonPanel {
+  max-width: 700px;
+}
+
+.buttonDiv {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar h1 {
+  font-size: 45px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.Quote h1 {
+  display: block;
+  justify-content: center;
+  align-items: start;
+  padding: 50px;
+}
+
+.home {
+  padding: 20px;
+}
+
+.lorem {
+  padding: 30px;
+}
+
+.calculate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculate h2 {
+  padding: 20px;
+}
