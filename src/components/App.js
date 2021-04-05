@@ -4,18 +4,19 @@ import Calculator from './Calculator';
 import Home from './Home';
 import Quote from './Quote';
 import Navbar from './Navbar';
+import './App.css';
 
-export default function App() {
-  return (
-    <>
+const App = () => (
+  <>
+    <BrowserRouter>
       <Navbar />
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/quote" component={Quote} exact />
-          <Route path="/calculator" component={Calculator} exact />
-        </Switch>
-      </BrowserRouter>
-    </>
-  );
-}
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/Quote" component={Quote} />
+        <Route exact path="/Calculator" component={Calculator} />
+      </Switch>
+    </BrowserRouter>
+  </>
+);
+
+export default App;

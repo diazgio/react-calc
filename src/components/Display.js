@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 
-export default function Display({ result, next, operation }) {
+const Display = props => {
+  const { result, next, operation } = props;
+
   return (
     <div className="display">
       { (!result && next) || result }
@@ -8,7 +10,7 @@ export default function Display({ result, next, operation }) {
       {(result && next)}
     </div>
   );
-}
+};
 
 Display.propTypes = {
   result: PropTypes.string,
@@ -20,3 +22,5 @@ Display.defaultProps = {
   next: '',
   operation: '',
 };
+
+export default Display;
