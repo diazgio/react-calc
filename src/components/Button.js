@@ -8,7 +8,7 @@ export default function Button({ name, onClick }) {
   width: ${props => (props.name === '0' ? '50%' : '25%')};
   height: 100px;
   background-color: ${props => (props.name === '-' || props.name === 'X' || props.name === '+' || props.name === '=' || props.name === '÷' ? 'orange' : 'lightgray')};
-`;
+  `;
 
   return (
     <ButtonText type="button" name={name} onClick={() => { onClick(name); }}>

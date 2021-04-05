@@ -5,7 +5,7 @@ const Quote = () => (
     <h2 className="quote">
       Mathematics is not about numbers, equations, computations, or algorithms:
     </h2>
-    <h2>it is about understanding. –William Paul Thurston</h2>
+    <h2 className="quote">it is about understanding. –William Paul Thurston</h2>
   </div>
 );
 
